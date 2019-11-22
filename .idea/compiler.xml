@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-mybaits" />
+        <module name="springcloud-demo" />
+        <module name="springcloud-clients2" />
+        <module name="springcloud-clients" />
+        <module name="springcloud" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-client" target="1.8" />
+      <module name="springcloud-mybatis" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-client" options="-parameters" />
+      <module name="springcloud-clients" options="-parameters" />
+      <module name="springcloud-clients2" options="-parameters" />
+      <module name="springcloud-demo" options="-parameters" />
+      <module name="springcloud-mybaits" options="-parameters" />
+    </option>
+  </component>
+</project>

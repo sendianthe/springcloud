@@ -1,0 +1,31 @@
+server:
+  port: 8777
+
+
+
+mybatis:
+  config-location: classpath:/mybatis-config.xml
+  mapper-locations: classpath:generator/*Dao.xml
+
+
+spring:
+  application:
+    name: mybatis2
+  datasource:
+    name: learn
+    type: org.apache.commons.dbcp2.BasicDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/learn?useUnicode=true&serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: sen14786333531
+  aop:
+    auto: true  # Add @EnableAspectJAutoProxy
+
+
+
+    eureka:
+      client:
+        serviceUrl:
+          defaultZone: http://localhost:8761/eureka/
+logging:
+  config: classpath:logback-spring.xml
